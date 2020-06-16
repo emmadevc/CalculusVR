@@ -172,7 +172,8 @@ namespace Assets.Scripts.Plotter.Axes
             double proportion, double point)
         {
             Alignment alignment = axis == Axis.y ? Alignment.Right : Alignment.Center;
-            string message = Math.Abs(point - (int)point) > 0.0 ? point.ToString("0.##") : ((int)point).ToString();
+            double dec = Math.Abs(point - (int)point);
+            string message = dec > 0.0 && Math.Abs(point) < 1.0? point.ToString("0.##") : ((int)point).ToString();
 
             double[] depths = new double[] { -0.001, 0.001 };
 
