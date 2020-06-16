@@ -2,7 +2,7 @@
 
 namespace Assets.Scripts.EMath.Function
 {
-    class IntervalFunction
+    public class IntervalFunction
     {
         public IFunction function { get; }
         public Interval interval { get; }

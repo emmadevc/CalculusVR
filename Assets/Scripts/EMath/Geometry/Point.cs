@@ -52,5 +52,10 @@ namespace Assets.Scripts.EMath.Geometry
             return new Point(axx * x + axy * y + axz * z, ayx * x + ayy * y + ayz * z,
                 azx * x + azy * y + azz * z);
         }
+
+        public Point Scale(double sx, double sy = 0, double sz = 0)
+        {
+            return new Point(x * sx, y * sy, z * sz);
+        }
     }
 }

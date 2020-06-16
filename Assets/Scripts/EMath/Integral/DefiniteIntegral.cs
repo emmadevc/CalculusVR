@@ -1,6 +1,6 @@
 ﻿namespace Assets.Scripts.EMath.Integral
 {
-    class DefiniteIntegral
+    public class DefiniteIntegral
     {
         public double value { get; }
 

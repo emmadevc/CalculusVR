@@ -223,7 +223,35 @@ namespace Assets.Scripts.EMath.MathCalculator.Parsers
                 }
             }
 
-            throw new SyntaxException($"Cadena de texto inesperada: {tokenizer.currentToken}");
+            throw new SyntaxException(GetUnexpectedTokenMessage(tokenizer.currentToken));
+        }
+
+        private string GetUnexpectedTokenMessage(Token token)
+        {
+            switch (token)
+            {
+                case Token.Add:
+                    return "Un operador suma se introdujo en un lugar inesperado";
+                case Token.Subtract:
+                    return "Un operador resta se introdujo en un lugar inesperado";
+                case Token.Multiply:
+                    return "Un operador multiplicación se introdujo en un lugar inesperado";
+                case Token.Divide:
+                    return "Un operador división se introdujo en un lugar inesperado";
+                case Token.Exponentiation:
+                    return "Un operador exponente se introdujo en un lugar inesperado";
+                case Token.OpenParens:
+                case Token.CloseParens:
+                    return "Un paréntesis se introdujo en un lugar inesperado";
+                case Token.Comma:
+                    return "Una coma se introdujo en un lugar inesperado";
+                case Token.Identifier:
+                    return "Una variable se introdujo en un lugar inesperado";
+                case Token.Number:
+                    return "Un número se introdujo en un lugar inesperado"; 
+            }
+
+            return "La expresión proporcionada no es correcta";
         }
     }
 }

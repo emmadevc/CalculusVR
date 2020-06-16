@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Assets.Scripts.EMath.Set
+﻿namespace Assets.Scripts.EMath.Set
 {
-    class Interval
+    public class Interval
     {
         public double a { get; }
         public double b { get; }

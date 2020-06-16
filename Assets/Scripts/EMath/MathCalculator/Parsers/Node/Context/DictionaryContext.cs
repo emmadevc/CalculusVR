@@ -14,14 +14,14 @@ namespace Assets.Scripts.EMath.MathCalculator.Parsers.Node.Context
 
         public double CallFunction(string name, object[] arguments)
         {
-            throw new InvalidFunctionException("No se puede llamar a una función de este contexto");
+            throw new InvalidFunctionException($"La función introducida es inválida: '{name}'");
         }
 
         public double ResolveVariable(string name)
         {
             if (!variables.ContainsKey(name))
             {
-                throw new InvalidVariableException($"Variable desconocida: '{name}'");
+                throw new InvalidVariableException($"La variable introducida es inválida: '{name}'");
             }
 
             return variables[name];

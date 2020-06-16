@@ -22,6 +22,11 @@ namespace Assets.Scripts.EMath.MathCalculator
             return Parser(expression).variables;
         }
 
+        public static void Clear()
+        {
+            parsers.Clear();
+        }
+
         private static Parser Parser(string expression)
         {
             if (!parsers.ContainsKey(expression))

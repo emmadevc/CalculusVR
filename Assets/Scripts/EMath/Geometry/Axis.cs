@@ -1,6 +1,6 @@
 ﻿namespace Assets.Scripts.EMath.Geometry
 {
-    enum Axis
+    public enum Axis
     {
         x,
         y,

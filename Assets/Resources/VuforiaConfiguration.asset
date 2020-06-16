@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2067402452, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
+  m_Name: VuforiaConfiguration
+  m_EditorClassIdentifier: 
+  vuforia:
+    vuforiaLicenseKey: AY4f8Xr/////AAABmYfQEPVc9US5uCKn3PXKeCd8+SaQDUyyHKehBp/Zqi/rTRKsX/pS61Nf8v10WGgJ+mH+pn8rkkRlhkZPKnBPH4TBTGzV6qOnUWc3qAQLLKE58Uo/ULbbxZEAd6MIBoxhGroxT7Cyn0xOOMt1y578LBDQvaxr9Hq93NXbGgWelVryKziWzaopnSPLwWak28ZJA3FyHvEes+az0cj6QLuqv1fa9UykrIE8NYEgYte28CZrkVNKuPZRwAeoWrNeiAJU/jTdcKmKAkPZV7XM1hNYv3+p84a1j6H+5ElYAcBULUoqMJVswncRA2W0CF63RO9y7a1q0sbI+lHwRVMsDnLdd5XrMrg4yPRtECeEcrW6W2N1
+    ufoLicenseKey: QVdMOHFsUC8vLy8vQUFBQUtLRDA1MWtsdmtCUGhEWWsvSXdBdWtSajNSYk1ibmh4SU5VR00yRlBSQU14cmNGRWtnMGU2SzhGM3owa0hyd1VscUluTGpnWW9CU0c3Ykp2RmZTSWRsQnQvaFlPemI4WjZVQ0Jrc1hRa3R2ZTYzQ1AzaXY2ZDEwcjZmVDRrNnRobm5pbWVlMjdYcmdaNjFHQ3lnNG1ZQ3lvUmcrVkdBMyt2bWVoWldpQytpNDMvdEJNWUZLOVQvSzVmZHowQzRKTnh0MHhGb0JuUVhUNVQ2U2VrUEsvK09ERk8xVld5eWRzSWY0elZENnBwSkVyMjROQnZjQS8yR09aa0x6Znd2K09zRElBcTl5dXA1VTRnTllZYzZsWlRQOS9tNFB2aytYNko2RFFuK1JKOVJYZmY5MDZnc2JOa1A3SlFUMlhkMVgzT3JHNUpjcWw5ckV1aTUzUitOc2hlUG4yU1pNaFdxa1Y1RWdtMytHMkZ0Tkg=
+    delayedInitialization: 0
+    cameraDeviceModeSetting: -1
+    maxSimultaneousImageTargets: 1
+    maxSimultaneousObjectTargets: 1
+    useDelayedLoadingObjectTargets: 0
+    modelTargetRecoWhileExtendedTracked: 1
+    version: 8.5.9
+    eulaAcceptedVersions: '{"Values":["8.6","8.5"]}'
+  database:
+    disableModelExtraction: 0
+  videoBackground:
+    numDivisions: 2
+    videoBackgroundShader: {fileID: 4800000, guid: f40623b353e2f1943b1b3ba42975db7a,
+      type: 3}
+    videoBackgroundEnabled: 1
+  deviceTracker:
+    autoInitTracker: 1
+    autoStartTracker: 1
+    arcoreRequirement: 1
+    autoImportArcore: 0
+  smartTerrain:
+    autoInitTracker: 0
+    autoStartTracker: 0
+  webcam:
+    deviceNameSetInEditor: HD Pro Webcam C920
+    turnOffWebCam: 0
+    renderTextureLayer: 30

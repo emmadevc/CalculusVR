@@ -1,6 +1,6 @@
 ﻿namespace Assets.Scripts.EMath.Function
 {
-    interface IFunction
+    public interface IFunction
     {
         string independent { get; }
 
